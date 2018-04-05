@@ -10,14 +10,11 @@ namespace Clinica.Dental.SantaApolonia.ViewModel
 {
     public class OpcionesViewModel : vmb
     {
-        private vmbCommand registrar;
-        private vmbCommand listaPacientes;
-
         public ICommand Registrar
         {
             get
             {
-                return registrar = registrar ?? new vmbCommand(execute =>
+                return new vmbCommand(execute =>
                 {
                     Registro ofrm = new Registro();
                     ofrm.ShowDialog();
@@ -29,7 +26,7 @@ namespace Clinica.Dental.SantaApolonia.ViewModel
         {
             get
             {
-                return listaPacientes = listaPacientes ?? new vmbCommand(execute =>
+                return new vmbCommand(execute =>
                 {
                     Pacientes ofrm = new Pacientes();
                     ofrm.ShowDialog();
