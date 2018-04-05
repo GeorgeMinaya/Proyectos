@@ -1,0 +1,58 @@
+﻿<Application x:Class="Clinica.Dental.SantaApolonia.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Clinica.Dental.SantaApolonia"
+             StartupUri="Views/Opciones.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/Boton.xaml"/>
+                
+                <ResourceDictionary Source="Resources/DesignerItem.xaml"/>
+                <ResourceDictionary Source="Resources/Brushes.xaml"/>
+                <ResourceDictionary Source="Resources/Expander.xaml"/>
+                <ResourceDictionary Source="Resources/ScrollBar.xaml"/>
+                <ResourceDictionary Source="Resources/ScrollViewer.xaml"/>
+                <ResourceDictionary Source="Resources/Slider.xaml"/>
+                <ResourceDictionary Source="Resources/Toolbox.xaml"/>
+                <ResourceDictionary Source="Resources/Tooltip.xaml"/>
+                <ResourceDictionary Source="Resources/ZoomBox.xaml"/>
+                <ResourceDictionary Source="Resources/ToolBar.xaml"/>
+                <ResourceDictionary Source="Resources/StatusBar.xaml"/>
+                
+                <ResourceDictionary Source="Plantilla/Disposiciones.xaml" />
+                <ResourceDictionary Source="Plantilla/AORemovible.xaml" />
+                <ResourceDictionary Source="Plantilla/Caries.xaml" />
+                <ResourceDictionary Source="Plantilla/CoronaDefinitiva.xaml" />
+                <ResourceDictionary Source="Plantilla/CoronaTemporal.xaml" />
+                <ResourceDictionary Source="Plantilla/DesgasteOclusal.xaml" />
+                <ResourceDictionary Source="Plantilla/Diastema.xaml" />
+                <ResourceDictionary Source="Plantilla/DienteAusente.xaml"/>
+                <ResourceDictionary Source="Plantilla/DienteClavija.xaml" />
+                <ResourceDictionary Source="Plantilla/DienteDiscromico.xaml" />
+                <ResourceDictionary Source="Plantilla/DienteEctopico.xaml" />
+                <ResourceDictionary Source="Plantilla/DienteExtruido.xaml" />
+                <ResourceDictionary Source="Plantilla/DienteIntruido.xaml" />
+                <ResourceDictionary Source="Plantilla/EdentuloTotal.xaml" />
+                <ResourceDictionary Source="Plantilla/Fractura.xaml" />
+                <ResourceDictionary Source="Plantilla/Geminacion.xaml" />
+                <ResourceDictionary Source="Plantilla/Giroversion.xaml" />
+                <ResourceDictionary Source="Plantilla/Impactacion.xaml" />
+                <ResourceDictionary Source="Plantilla/Implante.xaml" />
+                <ResourceDictionary Source="Plantilla/Macrodoncia.xaml" />
+                <ResourceDictionary Source="Plantilla/Microdoncia.xaml" />
+                <ResourceDictionary Source="Plantilla/Migracion.xaml" />
+                <ResourceDictionary Source="Plantilla/Movilidad.xaml" />
+                <ResourceDictionary Source="Plantilla/ProtesisFija.xaml" />
+                <ResourceDictionary Source="Plantilla/ProtesisRemovible.xaml" />
+                <ResourceDictionary Source="Plantilla/ProtesisTotal.xaml" />
+                <ResourceDictionary Source="Plantilla/Remanente.xaml" />
+                <ResourceDictionary Source="Plantilla/Restauracion.xaml" />
+                <ResourceDictionary Source="Plantilla/SuperNumerario.xaml" />
+                <ResourceDictionary Source="Plantilla/Transposicion.xaml" />
+                <ResourceDictionary Source="Plantilla/TratoPulpar.xaml" />
+                
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,38 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Clinica.Dental.SantaApolonia">
+
+    <local:ToolBox x:Key="SuperNumerario"
+               DefaultItemSize="40,35"
+               SnapsToDevicePixels="True"
+               ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+
+        <ItemsControl.Items>
+
+            <Grid IsHitTestVisible="False"
+                  Margin="2"
+                  ToolTip="Supernumerario" 
+                  MinHeight="20" 
+                  MinWidth="20"                  
+                  SnapsToDevicePixels="True"
+                  Tag="3101">
+                <Viewbox Stretch="Fill">
+                    <Canvas Width="19.9479" Height="18.5625">
+                        <Ellipse Width="19.9479" Height="18.5625" Canvas.Left="2.38419e-007" Canvas.Top="0" Stretch="Fill" 
+                                 StrokeLineJoin="Round" Stroke="SteelBlue" StrokeThickness="2"/>
+                        <TextBlock TextAlignment="Left" FontFamily="Arial" FontWeight="Bold" FontSize="9.44313" VerticalAlignment="Top" HorizontalAlignment="Left">
+                            <TextBlock.RenderTransform>
+                                <TransformGroup>
+                                    <MatrixTransform Matrix="1.33333,0,0,1.33333,6.28012,2.62218"/>
+                                </TransformGroup>
+                            </TextBlock.RenderTransform>
+				            <Run Text="S" Foreground="SteelBlue"/>
+                        </TextBlock>
+                    </Canvas>
+                </Viewbox>                
+            </Grid>
+
+        </ItemsControl.Items>        
+    </local:ToolBox>
+
+</ResourceDictionary>

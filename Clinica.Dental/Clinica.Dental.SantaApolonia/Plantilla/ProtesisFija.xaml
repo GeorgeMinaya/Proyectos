@@ -1,0 +1,28 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Clinica.Dental.SantaApolonia">
+
+    <local:ToolBox x:Key="ProtesisFija"
+               DefaultItemSize="50,30"
+               SnapsToDevicePixels="True"
+               ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+
+        <ItemsControl.Items>
+
+            <Grid IsHitTestVisible="False"
+                  Margin="2"
+                  ToolTip="Protesis Fija" 
+                  MinHeight="12" 
+                  MinWidth="25"                  
+                  SnapsToDevicePixels="True"
+                  Tag="2401">
+                <Viewbox Stretch="Fill">
+                    <Path Width="18.2083" Height="4.32813" Canvas.Left="3.60417" Canvas.Top="4.22916" Stretch="Fill" StrokeLineJoin="Miter" 
+                      Stroke="SteelBlue" Data="F1 M 4.10417,8.05729L 4.10417,4.72916L 21.3125,4.75317L 21.3125,7.82942"/>
+                </Viewbox>                
+            </Grid>
+
+        </ItemsControl.Items>        
+    </local:ToolBox>
+
+</ResourceDictionary>

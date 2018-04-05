@@ -1,0 +1,129 @@
+﻿<Window x:Class="Clinica.Dental.SantaApolonia.Views.Registro"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Clinica.Dental.SantaApolonia.Views"
+        xmlns:vm="clr-namespace:Clinica.Dental.SantaApolonia.ViewModel"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="Registro" Height="300" Width="800" 
+        WindowStartupLocation="CenterScreen"
+        WindowState="Normal"
+        Icon="/icono_cdsa.ico" 
+        WindowStyle="None"        
+        AllowsTransparency="True" 
+        ResizeMode="NoResize" 
+        BorderBrush="Gray" BorderThickness="1" >
+    <Window.DataContext>
+        <vm:RegistroViewModel />
+    </Window.DataContext>
+    <Grid Margin="4">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition />
+            <!--<RowDefinition Height="2"/>-->
+            <!--<RowDefinition Height="120"/>-->
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="SteelBlue" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="45" />
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="50"/>
+            </Grid.ColumnDefinitions>
+            <Path Fill="White" Stretch="Fill" Margin="10" Data="M15,14C12.33,14 7,15.33 7,18V20H23V18C23,15.33 17.67,14 15,14M6,10V7H4V10H1V12H4V15H6V12H9V10M15,12A4,4 0 0,0 19,8A4,4 0 0,0 15,4A4,4 0 0,0 11,8A4,4 0 0,0 15,12Z"/>
+            <Label Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Foreground="White" FontSize="16" >
+                Registrar nuevo paciente
+            </Label>
+            <Button Grid.Column="2" x:Name="btnCerrar" ToolTip="Cancelar"                        
+                    BorderBrush="SteelBlue" Background="White"
+                    Width="24" Height="24" Command="{Binding Cerrar}" >
+                <Path Fill="SteelBlue" Stretch="Fill" Margin="3" Data="M13.46,12L19,17.54V19H17.54L12,13.46L6.46,19H5V17.54L10.54,12L5,6.46V5H6.46L12,10.54L17.54,5H19V6.46L13.46,12Z" />
+            </Button>
+        </Grid>
+        <Grid Grid.Row="1" Height="120" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition />
+                <ColumnDefinition Width="140"/>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Label HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="SteelBlue" FontWeight="DemiBold" >Dni :</Label>
+            <Label Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="SteelBlue" FontWeight="DemiBold" >Nombres :</Label>
+            <Label Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="SteelBlue" FontWeight="DemiBold" >Apellidos :</Label>
+            <Label Grid.Row="3" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="SteelBlue" FontWeight="DemiBold" >Celular :</Label>
+            
+            <TextBox Grid.Column="1" Grid.Row="0" x:Name="txtDni" VerticalAlignment="Center" HorizontalAlignment="Left" Width="100" Text="{Binding Paciente.Dni, Mode=TwoWay}" PreviewTextInput="TextInputSoloNumeros" MaxLength="8" />
+            <TextBox Grid.Column="1" Grid.Row="1" x:Name="txtNombres" VerticalAlignment="Center" Text="{Binding Paciente.Nombres, Mode=TwoWay}" />
+            <TextBox Grid.Column="1" Grid.Row="2" x:Name="txtApellidos" VerticalAlignment="Center" Text="{Binding Paciente.Apellidos, Mode=TwoWay}" />
+            <TextBox Grid.Column="1" Grid.Row="3" x:Name="txtCelular" VerticalAlignment="Center" HorizontalAlignment="Left" Width="100" Text="{Binding Paciente.Celular, Mode=TwoWay}" PreviewTextInput="TextInputSoloNumeros" MaxLength="12"  />
+            
+            <Label Grid.Column="2" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="SteelBlue" FontWeight="DemiBold" >Correo :</Label>
+            <Label Grid.Column="2" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="SteelBlue" FontWeight="DemiBold" >Sexo :</Label>
+            <Label Grid.Column="2" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="SteelBlue" FontWeight="DemiBold" >Fecha nacimiento :</Label>
+            <Label Grid.Column="2" Grid.Row="3" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="SteelBlue" FontWeight="DemiBold" >Estado civil :</Label>
+
+            <TextBox Grid.Column="3" Grid.Row="0" x:Name="txtCorreo" VerticalAlignment="Center" Text="{Binding Paciente.Correo, Mode=TwoWay}" />
+            <ComboBox Grid.Column="3" Grid.Row="1" x:Name="cbSexo" VerticalAlignment="Center" HorizontalAlignment="Left" 
+                      SelectedValue="{Binding Paciente.Sexo, Mode=TwoWay}" ItemsSource="{Binding Path=ListaSexo}"  
+                      SelectedValuePath="Value" DisplayMemberPath="Key" SelectedIndex="0"/>
+            <DatePicker Grid.Column="3" Grid.Row="2" x:Name="txtFchNacimiento" VerticalAlignment="Center" HorizontalAlignment="Left" Width="130" 
+                         SelectedDate="{Binding Paciente.FchNacimiento, Mode=TwoWay}" />
+            <!--SelectedDate="{x:Static sys:DateTime.Now}"-->
+            <ComboBox Grid.Column="3" Grid.Row="3" x:Name="cbEstadoCivil" VerticalAlignment="Center" HorizontalAlignment="Left"
+                      SelectedValue="{Binding Paciente.EstadoCivil, Mode=TwoWay}" ItemsSource="{Binding Path=ListaEstados}"  
+                      SelectedValuePath="Value" DisplayMemberPath="Key" SelectedIndex="0" />
+        </Grid>
+        <!--<StackPanel Grid.Row="2" Background="LightGray" />
+        <Grid Grid.Row="3" Height="60">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="250"/>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Label Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="SteelBlue" FontWeight="DemiBold" >Alergia :</Label>
+            <Label Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="SteelBlue" FontWeight="DemiBold" >Enfermedad :</Label>
+
+            <TextBox Grid.Column="1" Grid.Row="0" x:Name="txtAlergia" VerticalAlignment="Center" Text="{Binding Anamnesis.Alergia, Mode=TwoWay}" />
+            <TextBox Grid.Column="1" Grid.Row="1" x:Name="txtEnfermedad" VerticalAlignment="Center" Text="{Binding Anamnesis.EnfermedadActual, Mode=TwoWay}" />
+            <CheckBox Grid.Column="2" Grid.Row="0" x:Name="chkHemorragiaExcesiva" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="SteelBlue" FontWeight="DemiBold" 
+                      IsChecked="{Binding Anamnesis.HemorragiaExcesiva}" >Hemorragia excesiva</CheckBox>
+            <CheckBox Grid.Column="2" Grid.Row="1" x:Name="chkEmbarazada" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="SteelBlue" FontWeight="DemiBold"
+                      IsChecked="{Binding Anamnesis.Embarazada}" >Embarazada</CheckBox>
+        </Grid>-->
+        <!--<StackPanel Grid.Row="4" Background="SteelBlue" />-->
+        <Grid Grid.Row="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition Width="90"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Row="4" Background="SteelBlue" Height="2" Margin="0,0,10,0"/>            
+            <!--<Border Grid.Row="4" CornerRadius="0,0,0,35" BorderThickness="1" Height="40" Width="120" Background="SteelBlue">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center"  >
+                    <Label Foreground="White">Registrar</Label>
+                    <Path Fill="White" Data="M15,9H5V5H15M12,19A3,3 0 0,1 9,16A3,3 0 0,1 12,13A3,3 0 0,1 15,16A3,3 0 0,1 12,19M17,3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V7L17,3Z" Margin="0,0,10,0"/>
+                </StackPanel>
+            </Border>-->
+            <Button Grid.Column="1" x:Name="btnRegistrar" ToolTip="Registrar nuevo paciente"
+                    Height="40" 
+                    Background="SteelBlue" BorderBrush="White"
+                    Command="{Binding Registrar}">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Background="SteelBlue">
+                    <Path Fill="White" Data="M15,9H5V5H15M12,19A3,3 0 0,1 9,16A3,3 0 0,1 12,13A3,3 0 0,1 15,16A3,3 0 0,1 12,19M17,3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V7L17,3Z" />
+                    <Label Foreground="White">Registrar</Label>
+                </StackPanel>
+            </Button>
+        </Grid>
+    </Grid> 
+</Window>

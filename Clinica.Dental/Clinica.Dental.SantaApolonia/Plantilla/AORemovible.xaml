@@ -1,0 +1,62 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Clinica.Dental.SantaApolonia">
+    
+    <Style x:Key="EstiloItemComun"
+           TargetType="Path">
+        <Setter Property="Fill"
+                Value="SteelBlue" />
+        <Setter Property="StrokeLineJoin"
+                Value="Round" />
+        <Setter Property="Stretch"
+                Value="Fill" />
+        <Setter Property="Margin"
+                Value="1" />
+        <Setter Property="IsHitTestVisible"
+                Value="False" />
+        <Setter Property="SnapsToDevicePixels"
+                Value="True" />
+    </Style>
+
+    <!-- ZicZac -->
+    <Style x:Key="ZicZac"
+           TargetType="Path"
+           BasedOn="{StaticResource EstiloItemComun}">
+        <Setter Property="Data"
+                Value="M15,5V9H11V13H7V17H3V20H10V16H14V12H18V8H22V5H15Z" />
+    </Style>
+
+    <Style x:Key="ZicZac_DragThumb"
+           TargetType="Path"
+           BasedOn="{StaticResource ZicZac}">
+        <Setter Property="IsHitTestVisible" 
+                Value="true" />
+    </Style>
+
+    <!-- ================================================================================================== -->
+    <!-- Listado -->
+
+    <local:ToolBox x:Key="AORemovible"
+               DefaultItemSize="30,30"
+               SnapsToDevicePixels="True"
+               ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+
+        <ItemsControl.Items>
+
+            <Path Style="{StaticResource ZicZac}"
+                  MinWidth="10"
+                  MinHeight="10"
+                  ToolTip="APARATO ORTODONTICO REMOVIBLE - ZIG ZAG"
+                  Tag="0201">
+
+                <local:DesignerItem.MoveThumbTemplate>
+                    <ControlTemplate>
+                        <Path Style="{StaticResource  ZicZac_DragThumb}" />
+                    </ControlTemplate>
+                </local:DesignerItem.MoveThumbTemplate>
+            </Path>
+            
+        </ItemsControl.Items>        
+    </local:ToolBox>
+
+</ResourceDictionary>

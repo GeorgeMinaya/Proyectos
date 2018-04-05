@@ -1,0 +1,9 @@
+E:\Desarrollo\Clinica.Dental\Clinica.Dental.BE\bin\Debug\Clinica.Dental.BE.dll
+E:\Desarrollo\Clinica.Dental\Clinica.Dental.BE\bin\Debug\Clinica.Dental.BE.pdb
+E:\Desarrollo\Clinica.Dental\Clinica.Dental.BE\obj\Debug\Clinica.Dental.BE.csprojResolveAssemblyReference.cache
+E:\Desarrollo\Clinica.Dental\Clinica.Dental.BE\obj\Debug\Clinica.Dental.BE.dll
+E:\Desarrollo\Clinica.Dental\Clinica.Dental.BE\obj\Debug\Clinica.Dental.BE.pdb
+C:\Desarrollo\Clinica.Dental\Clinica.Dental.BE\bin\Debug\Clinica.Dental.BE.dll
+C:\Desarrollo\Clinica.Dental\Clinica.Dental.BE\bin\Debug\Clinica.Dental.BE.pdb
+C:\Desarrollo\Clinica.Dental\Clinica.Dental.BE\obj\Debug\Clinica.Dental.BE.dll
+C:\Desarrollo\Clinica.Dental\Clinica.Dental.BE\obj\Debug\Clinica.Dental.BE.pdb

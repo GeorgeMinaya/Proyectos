@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ClinicaDental">
+  <DataContextMoniker Name="/ClinicaDentalDataContext" />
+  <nestedChildShapes>
+    <classShape Id="4f339fd4-a196-4381-b86d-9ee305450d8f" absoluteBounds="0.75, 1, 2, 3.1170068359375">
+      <DataClassMoniker Name="/ClinicaDentalDataContext/PACIENTE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8bfcc881-f859-45f1-84b8-d94973ab4682" absoluteBounds="0.765, 1.46, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e87c489a-3ef5-4576-8d5e-d45aee2c7f97" absoluteBounds="7.375, 0.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/ClinicaDentalDataContext/TRATAMIENTO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5ef00186-99f0-4c17-8b0c-5ef46aa6d849" absoluteBounds="7.3900000000000006, 0.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="52bab6eb-a1f9-48c2-a780-ab5d5fd1543b" absoluteBounds="4.125, 1.5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/ClinicaDentalDataContext/HISTORIAL" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0ba82708-648e-4a7e-b8e7-991005b90b55" absoluteBounds="4.14, 1.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 2.57774983723958); (4.125 : 2.57774983723958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ClinicaDentalDataContext/PACIENTE/PACIENTE_HISTORIAL" />
+      <nodes>
+        <classShapeMoniker Id="4f339fd4-a196-4381-b86d-9ee305450d8f" />
+        <classShapeMoniker Id="52bab6eb-a1f9-48c2-a780-ab5d5fd1543b" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="c7d0bb0c-43e4-4f54-a66d-1c50b9873e35" absoluteBounds="7.25, 3, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/ClinicaDentalDataContext/DETALLE_HISTORIAL" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f3e23098-be3c-4f26-a6d8-04643906c1e6" absoluteBounds="7.265, 3.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.125 : 3.32774983723958); (7.25 : 3.32774983723958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ClinicaDentalDataContext/HISTORIAL/HISTORIAL_DETALLE_HISTORIAL" />
+      <nodes>
+        <classShapeMoniker Id="52bab6eb-a1f9-48c2-a780-ab5d5fd1543b" />
+        <classShapeMoniker Id="c7d0bb0c-43e4-4f54-a66d-1c50b9873e35" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.3125 : 2.07859537760417); (8.3125 : 3)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ClinicaDentalDataContext/TRATAMIENTO/TRATAMIENTO_DETALLE_HISTORIAL" />
+      <nodes>
+        <classShapeMoniker Id="e87c489a-3ef5-4576-8d5e-d45aee2c7f97" />
+        <classShapeMoniker Id="c7d0bb0c-43e4-4f54-a66d-1c50b9873e35" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="fa890bfd-3345-48f4-83a9-c205b3663e40" absoluteBounds="2.75, 4.625, 2, 1.9631982421875">
+      <DataClassMoniker Name="/ClinicaDentalDataContext/RESERVA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ad6a8b24-3670-4e24-b1a7-592fcaf58c9f" absoluteBounds="2.7649999999999997, 5.085, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.7499995 : 4.1170068359375); (1.7499995 : 5.60659912109375); (2.75 : 5.60659912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ClinicaDentalDataContext/PACIENTE/PACIENTE_RESERVA" />
+      <nodes>
+        <classShapeMoniker Id="4f339fd4-a196-4381-b86d-9ee305450d8f" />
+        <classShapeMoniker Id="fa890bfd-3345-48f4-83a9-c205b3663e40" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

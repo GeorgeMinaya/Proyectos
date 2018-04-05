@@ -1,0 +1,31 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Clinica.Dental.SantaApolonia">
+
+    <local:ToolBox x:Key="SemiImpactacion"
+               DefaultItemSize="30,30"
+               SnapsToDevicePixels="True"
+               ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+        <ItemsControl.Items>
+
+            <Grid IsHitTestVisible="False"
+                  Margin="2"
+                  ToolTip="Impactación" 
+                  MinHeight="12" MinWidth="14"
+                  Tag="3001">
+                
+                <TextBlock TextAlignment="Left" FontFamily="Arial" FontWeight="Bold" FontSize="14" VerticalAlignment="Top" HorizontalAlignment="Left">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <MatrixTransform Matrix="1.33333,0,0,1.33333,0.00758575,-3.025"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+		            <Run Text="SI" Foreground="SteelBlue"/>
+                </TextBlock>
+            </Grid>
+
+        </ItemsControl.Items>
+
+    </local:ToolBox>
+
+</ResourceDictionary>

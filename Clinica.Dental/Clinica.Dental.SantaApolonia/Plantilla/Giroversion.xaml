@@ -1,0 +1,94 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Clinica.Dental.SantaApolonia">
+
+    <Style x:Key="EstiloItemComun"
+           TargetType="Path">
+        <Setter Property="Fill"
+                Value="SteelBlue" />
+        <Setter Property="StrokeLineJoin"
+                Value="Round" />
+        <Setter Property="Stroke"
+                Value="SteelBlue" />
+        <Setter Property="StrokeThickness"
+                Value="3" />
+        <Setter Property="Stretch"
+                Value="Fill" />
+        <Setter Property="Margin"
+                Value="1" />
+        <Setter Property="IsHitTestVisible"
+                Value="False" />
+        <Setter Property="SnapsToDevicePixels"
+                Value="True" />
+    </Style>
+
+    <!-- Flecha curva derecha -->
+    <Style x:Key="CurvaDerecha"
+           TargetType="Path"
+           BasedOn="{StaticResource EstiloItemComun}">
+        <Setter Property="Data"
+                Value="F1 M 3.92341,5.60824C 4.18793,6.1068 4.45244,6.60536 4.78118,7.04661C 5.10991,7.48785 5.50286,7.87179 5.85526,8.16721C 6.20766,8.46263 6.5195,8.66954 6.94317,8.86128C 7.36684,9.05302 7.90233,9.22958 8.44815,9.38461C 8.99396,9.53964 9.55011,9.67313 10.1795,9.76171C 10.809,9.85029 11.5117,9.89395 12.1833,9.8659C 12.8549,9.83786 13.4954,9.7381 14.1525,9.53104C 14.8096,9.32397 15.4834,9.00959 16.0052,8.67872C 16.5271,8.34785 16.8971,8.00048 17.2671,7.65312L 18.8577,9.27528L 19.7457,5.23155L 15.4717,5.74932L 17.0935,7.42882C 16.439,8.018 15.7845,8.60717 15.1633,8.96601C 14.5421,9.32484 13.9543,9.45333 13.2375,9.55571C 12.5207,9.6581 11.675,9.73438 10.8163,9.66415C 9.95758,9.59391 9.08594,9.37716 8.39898,9.17279C 7.71202,8.96842 7.20975,8.77643 6.68787,8.48085C 6.16599,8.18527 5.6245,7.7861 5.16049,7.29006C 4.69648,6.79403 4.30995,6.20114 3.92341,5.60824 Z" />
+    </Style>
+
+    <Style x:Key="CurvaDerecha_DragThumb"
+           TargetType="Path"
+           BasedOn="{StaticResource CurvaDerecha}">
+        <Setter Property="IsHitTestVisible" 
+                Value="true" />
+    </Style>
+
+    <!-- Flecha curva izquierda -->
+    <Style x:Key="CurvaIzquierda"
+           TargetType="Path"
+           BasedOn="{StaticResource EstiloItemComun}">
+        <Setter Property="Data"
+                Value="F1 M 19.3577,5.60824C 19.0931,6.1068 18.8286,6.60536 18.4999,7.04661C 18.1712,7.48785 17.7782,7.87179 17.4258,8.16721C 17.0734,8.46263 16.7616,8.66954 16.3379,8.86128C 15.9142,9.05301 15.3787,9.22958 14.8329,9.38461C 14.2871,9.53964 13.731,9.67313 13.1015,9.76171C 12.4721,9.85029 11.7694,9.89395 11.0978,9.8659C 10.4262,9.83786 9.78572,9.7381 9.1286,9.53104C 8.47148,9.32397 7.79772,9.00959 7.27585,8.67872C 6.75398,8.34785 6.38399,8.00048 6.01401,7.65312L 4.42334,9.27528L 3.53534,5.23154L 7.80933,5.74932L 6.18756,7.42882C 6.84207,8.018 7.49658,8.60717 8.11776,8.96601C 8.73894,9.32484 9.32679,9.45333 10.0436,9.55571C 10.7604,9.6581 11.6061,9.73438 12.4648,9.66415C 13.3235,9.59391 14.1951,9.37716 14.8821,9.17279C 15.5691,8.96842 16.0713,8.77643 16.5932,8.48085C 17.1151,8.18527 17.6566,7.78609 18.1206,7.29006C 18.5846,6.79403 18.9711,6.20114 19.3577,5.60824 Z " />
+    </Style>
+
+    <Style x:Key="CurvaIzquierda_DragThumb"
+           TargetType="Path"
+           BasedOn="{StaticResource CurvaIzquierda}">
+        <Setter Property="IsHitTestVisible" 
+                Value="true" />
+    </Style>
+
+    <!-- ================================================================================================== -->
+    <!-- Listado -->
+
+    <local:ToolBox x:Key="Giroversion"
+               DefaultItemSize="35,30"
+               SnapsToDevicePixels="True"
+               ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+
+        <ItemsControl.Items>
+
+            <Path Style="{StaticResource CurvaDerecha}"
+                  MinWidth="15"
+                  MinHeight="8"
+                  ToolTip="Giroversión - Derecha"
+                  Tag="1701">
+
+                <local:DesignerItem.MoveThumbTemplate>
+                    <ControlTemplate>
+                        <Path Style="{StaticResource  CurvaDerecha_DragThumb}" />
+                    </ControlTemplate>
+                </local:DesignerItem.MoveThumbTemplate>
+            </Path>
+
+            <Path Style="{StaticResource CurvaIzquierda}"
+                  MinWidth="15"
+                  MinHeight="8"
+                  ToolTip="Giroversión - Izquierda"
+                  Tag="1702">
+
+                <local:DesignerItem.MoveThumbTemplate>
+                    <ControlTemplate>
+                        <Path Style="{StaticResource  CurvaIzquierda_DragThumb}" />
+                    </ControlTemplate>
+                </local:DesignerItem.MoveThumbTemplate>
+            </Path>
+
+        </ItemsControl.Items>        
+    </local:ToolBox>
+
+</ResourceDictionary>
