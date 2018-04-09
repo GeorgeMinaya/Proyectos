@@ -3,12 +3,15 @@ using Clinica.Dental.BL;
 using Clinica.Dental.SantaApolonia.Views;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
+using System.Windows.Data;
 using System.Windows.Input;
 
 namespace Clinica.Dental.SantaApolonia.ViewModel
@@ -18,16 +21,60 @@ namespace Clinica.Dental.SantaApolonia.ViewModel
 
         public PacientesViewModel()
         {
-            var pacientes = new PacienteBL();
-            var lista = pacientes.ListarPaciente();
-            if (lista.Count() > 0)
-                lpacientes.AddRange(lista);
+            try
+            {
+                var pacientes = new PacienteBL();
+                var lista = pacientes.ListarPaciente();
+                if (lista.Count() > 0)
+                {
+                    cvFiltrable = new CollectionViewSource();                    
+                    cvFiltrable.Source = new ObservableCollection<PacienteBE>(lista);
+                    cvFiltrable.Filter += CvFiltrable_Filter;
+                }                 
+            }
+            catch (Exception ex)
+            {
+                System.Windows.MessageBox.Show(ex.Message);
+            }
         }
 
-        private List<PacienteBE> lpacientes = new List<PacienteBE>();
+        private void CvFiltrable_Filter(object sender, FilterEventArgs e)
+        {
+            if (string.IsNullOrEmpty(Filtro))
+            {
+                e.Accepted = true;
+                return;
+            }
+
+            var buscar = e.Item as PacienteBE;
+            if (buscar.Nombres.ToUpper().Contains(Filtro.ToUpper()) ||
+                buscar.Apellidos.ToUpper().Contains(Filtro.ToUpper()) ||
+                buscar.Dni.ToUpper().Contains(Filtro.ToUpper()))
+                e.Accepted = true;
+            else
+                e.Accepted = false;
+               
+        }
+
+        private List<PacienteBE> lpacientes = new List<PacienteBE>();        
         private PacienteBE pacienteElegido;
-        private vmbCommand atender;
-        private vmbCommand darcita;
+        private string filtro = string.Empty;
+        private CollectionViewSource cvFiltrable;
+                
+        public string Filtro
+        {
+            get { return filtro; }
+            set {
+                filtro = value;
+                cvFiltrable.View.Refresh();
+                OnPropertyChanged();
+            }
+        }
+
+        public ICollectionView ColeccionFiltrable
+        {
+            get { return cvFiltrable.View; }
+        }
 
         public PacienteBE PacienteElegido
         {
@@ -48,7 +95,7 @@ namespace Clinica.Dental.SantaApolonia.ViewModel
         {
             get
             {
-                return darcita = darcita ?? new vmbCommand(execute =>
+                return new vmbCommand(execute =>
                 {
                     if (PacienteElegido != null)
                     {
@@ -65,13 +112,13 @@ namespace Clinica.Dental.SantaApolonia.ViewModel
         {
             get
             {
-                return atender = atender ?? new vmbCommand(execute => Atendiendo(), canExecute => PuedeAtender());
+                return new vmbCommand(execute => Atendiendo(), canExecute => PuedeAtender());
             }
         }
 
         private bool PuedeAtender()
         {
-            return lPacientes.Count > 0 ? true : false;
+            return PacienteElegido != null ? true : false;
         }
 
         private void Atendiendo()

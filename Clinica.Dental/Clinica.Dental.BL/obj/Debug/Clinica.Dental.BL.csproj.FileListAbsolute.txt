@@ -24,3 +24,16 @@ C:\Desarrollo\Clinica.Dental\Clinica.Dental.BL\bin\Debug\Clinica.Dental.DM.pdb
 C:\Desarrollo\Clinica.Dental\Clinica.Dental.BL\obj\Debug\Clinica.Dental.BL.csprojResolveAssemblyReference.cache
 C:\Desarrollo\Clinica.Dental\Clinica.Dental.BL\obj\Debug\Clinica.Dental.BL.dll
 C:\Desarrollo\Clinica.Dental\Clinica.Dental.BL\obj\Debug\Clinica.Dental.BL.pdb
+C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.BL\bin\Debug\app.config
+C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.BL\bin\Debug\PacienteDA.cs
+C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.BL\bin\Debug\Clinica.Dental.BL.dll
+C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.BL\bin\Debug\Clinica.Dental.BL.pdb
+C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.BL\bin\Debug\Clinica.Dental.BE.dll
+C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.BL\bin\Debug\Clinica.Dental.DA.dll
+C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.BL\bin\Debug\Clinica.Dental.DM.dll
+C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.BL\bin\Debug\Clinica.Dental.BE.pdb
+C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.BL\bin\Debug\Clinica.Dental.DA.pdb
+C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.BL\bin\Debug\Clinica.Dental.DM.pdb
+C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.BL\obj\Debug\Clinica.Dental.BL.csprojResolveAssemblyReference.cache
+C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.BL\obj\Debug\Clinica.Dental.BL.dll
+C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.BL\obj\Debug\Clinica.Dental.BL.pdb

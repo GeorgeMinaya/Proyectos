@@ -7,3 +7,8 @@ C:\Desarrollo\Clinica.Dental\Clinica.Dental.BE\bin\Debug\Clinica.Dental.BE.dll
 C:\Desarrollo\Clinica.Dental\Clinica.Dental.BE\bin\Debug\Clinica.Dental.BE.pdb
 C:\Desarrollo\Clinica.Dental\Clinica.Dental.BE\obj\Debug\Clinica.Dental.BE.dll
 C:\Desarrollo\Clinica.Dental\Clinica.Dental.BE\obj\Debug\Clinica.Dental.BE.pdb
+C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.BE\bin\Debug\Clinica.Dental.BE.dll
+C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.BE\bin\Debug\Clinica.Dental.BE.pdb
+C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.BE\obj\Debug\Clinica.Dental.BE.csprojResolveAssemblyReference.cache
+C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.BE\obj\Debug\Clinica.Dental.BE.dll
+C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.BE\obj\Debug\Clinica.Dental.BE.pdb

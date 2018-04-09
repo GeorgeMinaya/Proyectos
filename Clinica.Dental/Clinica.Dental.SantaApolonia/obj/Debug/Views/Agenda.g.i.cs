@@ -9,7 +9,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using Clinica.Dental.SantaApolonia;
 using Clinica.Dental.SantaApolonia.Views;
 using System;
 using System.Diagnostics;
