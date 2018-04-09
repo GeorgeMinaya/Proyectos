@@ -32,7 +32,7 @@ namespace Clinica.Dental.SantaApolonia.Views
             //rvm = new OdontogramaViewModel();
             //this.DataContext = rvm;
             InitializeComponent();
-            
+
         }
 
         public void SetCanvas(string sPaciente)
@@ -49,7 +49,10 @@ namespace Clinica.Dental.SantaApolonia.Views
                     DesignerItem item = DeserializeDesignerItem(itemXML, id, 0, 0);
                     MyDesignerCanvas.Children.Add(item);
                 }
+                ETratado.Visibility = Visibility.Visible;
             }
+            else
+                ETratado.Visibility = Visibility.Hidden;
         }
 
         private DesignerItem DeserializeDesignerItem(XElement itemXML, Guid id, double OffsetX, double OffsetY)

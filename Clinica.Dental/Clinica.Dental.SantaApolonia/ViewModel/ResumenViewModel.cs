@@ -54,9 +54,9 @@ namespace Clinica.Dental.SantaApolonia.ViewModel
             {
                 return finalizar = finalizar ?? new vmbCommand(execute =>
                 {
-                    var ad = lTratamientos;
-                    OnPropertyChanged("Total");
-                    OnPropertyChanged("SumaTotal");
+
+
+
                 });
             }
         }

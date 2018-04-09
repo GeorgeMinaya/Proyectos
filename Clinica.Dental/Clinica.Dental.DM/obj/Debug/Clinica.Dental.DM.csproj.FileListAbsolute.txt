@@ -16,6 +16,5 @@ C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.DM\bin\Debug\
 C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.DM\bin\Debug\Clinica.Dental.DM.dll.config
 C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.DM\bin\Debug\Clinica.Dental.DM.dll
 C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.DM\bin\Debug\Clinica.Dental.DM.pdb
-C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.DM\obj\Debug\Clinica.Dental.DM.csprojResolveAssemblyReference.cache
 C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.DM\obj\Debug\Clinica.Dental.DM.dll
 C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.DM\obj\Debug\Clinica.Dental.DM.pdb

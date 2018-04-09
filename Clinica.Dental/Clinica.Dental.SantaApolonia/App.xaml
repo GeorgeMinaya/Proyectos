@@ -51,6 +51,7 @@
                 <ResourceDictionary Source="Plantilla/SuperNumerario.xaml" />
                 <ResourceDictionary Source="Plantilla/Transposicion.xaml" />
                 <ResourceDictionary Source="Plantilla/TratoPulpar.xaml" />
+                <ResourceDictionary Source="Plantilla/Procesado.xaml" />
                 
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>

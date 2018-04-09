@@ -39,7 +39,7 @@
                 <Path Fill="SteelBlue" Stretch="Fill" Margin="3" Data="M13.46,12L19,17.54V19H17.54L12,13.46L6.46,19H5V17.54L10.54,12L5,6.46V5H6.46L12,10.54L17.54,5H19V6.46L13.46,12Z" />
             </Button>
         </Grid>
-        <ListView  Grid.Row="1" BorderBrush="White" Margin="4,15"
+        <ListView Grid.Row="1" x:Name="lvResumen" BorderBrush="White" Margin="4,15"
                       ItemsSource="{Binding lTratamientos }"                       
                       HorizontalContentAlignment="Stretch" Foreground="SteelBlue">
             <ListView.ItemTemplate>
@@ -52,29 +52,20 @@
                         </Grid.ColumnDefinitions>
                         <TextBlock Text="{Binding Indice}" />
                         <TextBlock Grid.Column="1" Text="{Binding Descripcion}" />
-                        <TextBox Grid.Column="2" Text="{Binding Precio, Mode=TwoWay}" PreviewTextInput="TextInputSoloNumeros" MaxLength="5" />
+                        <TextBox Grid.Column="2" Text="{Binding Precio, Mode=TwoWay}" PreviewTextInput="TextInputSoloNumeros" LostFocus="TextBox_LostFocus" MaxLength="5" />
                     </Grid>                    
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
         <TextBlock Grid.Row="2" HorizontalAlignment="Left" Text="{Binding Total, Mode=OneWay}" Foreground="SteelBlue" />
-        <TextBlock Grid.Row="2" HorizontalAlignment="Right" Text="{Binding SumaTotal, Mode=OneWay}" Foreground="SteelBlue" />
+        <TextBlock Grid.Row="2" x:Name="lblSumaTotal" HorizontalAlignment="Right" Foreground="SteelBlue" />
         <Grid Grid.Row="3">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="90" />
                 <ColumnDefinition />
                 <ColumnDefinition Width="90" />
             </Grid.ColumnDefinitions>
-            <Button ToolTip="Calcular los precios nuevamente" Height="40"
-                                Background="SteelBlue" BorderBrush="White"
-                                Command="{Binding Finalizar}">
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Background="SteelBlue" >
-                    <Path Fill="White"  Data="M11.8,10.9C9.53,10.31 8.8,9.7 8.8,8.75C8.8,7.66 9.81,6.9 11.5,6.9C13.28,6.9 13.94,7.75 14,9H16.21C16.14,7.28 15.09,5.7 13,5.19V3H10V5.16C8.06,5.58 6.5,6.84 6.5,8.77C6.5,11.08 8.41,12.23 11.2,12.9C13.7,13.5 14.2,14.38 14.2,15.31C14.2,16 13.71,17.1 11.5,17.1C9.44,17.1 8.63,16.18 8.5,15H6.32C6.44,17.19 8.08,18.42 10,18.83V21H13V18.85C14.95,18.5 16.5,17.35 16.5,15.3C16.5,12.46 14.07,11.5 11.8,10.9Z" />
-                    <Label Foreground="White" FontSize="11">Calcular</Label>
-                </StackPanel>
-            </Button>
-            <StackPanel Grid.Column="1" Background="SteelBlue" Height="2" Margin="10,0"/>
-            <Button Grid.Column="2" ToolTip="Imprimir la boleta y Finalizar la atención" Height="40"
+            <StackPanel Grid.Column="0" Background="SteelBlue" Height="2" Margin="10,0"/>
+            <Button Grid.Column="1" ToolTip="Imprimir la boleta y Finalizar la atención" Height="40"
                                 Background="SteelBlue" BorderBrush="White"
                                 Command="{Binding Finalizar}">
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Background="SteelBlue" >

@@ -39,9 +39,13 @@ namespace Clinica.Dental.SantaApolonia.Views
             var regex = new Regex(@"^[0-9]*(?:\.[0-9]*)?$");
             if (regex.IsMatch(e.Text) && !(e.Text == "." && ((TextBox)sender).Text.Contains(e.Text)))
                 e.Handled = false;
-
             else
                 e.Handled = true;
+        }
+
+        private void TextBox_LostFocus(object sender, RoutedEventArgs e)
+        {
+            lblSumaTotal.Text = ((ResumenViewModel)this.DataContext).SumaTotal;
         }
     }
 }

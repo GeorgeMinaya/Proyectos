@@ -90,9 +90,15 @@
                 <ScrollViewer Background="Transparent"
                                   HorizontalScrollBarVisibility="Disabled"
                                   VerticalScrollBarVisibility="Auto"
-                              Padding="5">
+                              Padding="2">
                     <StackPanel>
-
+                        <StackPanel x:Name="ETratado" Visibility="Visible" Margin="3" >                            
+                            <Expander IsExpanded="True" 
+                                  HorizontalContentAlignment="Right"
+                                  Header="Atención realizada"
+                                  Margin="0,1,0,0"
+                                  Content="{StaticResource Procesado}" />
+                        </StackPanel>
                         <Expander IsExpanded="False"
                             Header="Aparato ortodóntico fijo"                                  
                             Margin="0,1,0,0"                     
