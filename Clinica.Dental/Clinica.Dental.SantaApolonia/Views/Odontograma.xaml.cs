@@ -29,10 +29,8 @@ namespace Clinica.Dental.SantaApolonia.Views
         public Odontograma()
         {
             DataContextChanged += Registro_DataContextChanged;
-            //rvm = new OdontogramaViewModel();
-            //this.DataContext = rvm;
             InitializeComponent();
-
+            var cass = ControlZoom;
         }
 
         public void SetCanvas(string sPaciente)

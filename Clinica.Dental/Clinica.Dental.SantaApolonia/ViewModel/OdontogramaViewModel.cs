@@ -18,12 +18,12 @@ namespace Clinica.Dental.SantaApolonia.ViewModel
     {
         public OdontogramaViewModel()
         {
-            this.paciente = new PacienteBE();
+            this.Paciente = new PacienteBE();
         }
 
         public OdontogramaViewModel(PacienteBE paciente)
         {
-            this.paciente = paciente;
+            this.Paciente = paciente;
         }
 
         private PacienteBE paciente;
@@ -35,10 +35,7 @@ namespace Clinica.Dental.SantaApolonia.ViewModel
         public PacienteBE Paciente
         {
             get { return paciente; }
-            set
-            {
-                paciente = value;
-            }
+            set { paciente = value; OnPropertyChanged(); }
         }
 
         public string Titulo
@@ -123,10 +120,10 @@ namespace Clinica.Dental.SantaApolonia.ViewModel
                         if (File.Exists(archivo)) File.Delete(archivo);
 
                         root.Save(archivo);
-                        
+
                         // mostrar el resumen 
 
-                        var vm = new ResumenViewModel(tratados);
+                        var vm = new ResumenViewModel(Paciente, tratados);
                         var view = new Resumen() { DataContext = vm };
                         view.Show();
 

@@ -1,4 +1,5 @@
 ﻿using Clinica.Dental.BE;
+using Clinica.Dental.BL;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -13,17 +14,18 @@ namespace Clinica.Dental.SantaApolonia.ViewModel
     {
         public ResumenViewModel()
         {
-            this.ltratamientos = new List<TratamientoBE.Atencion>();
+            LTratamientos = new ObservableCollection<TratamientoBE.Atencion>();
         }
 
-        public ResumenViewModel(IEnumerable<TratamientoBE.Atencion> tratamientos)
+        public ResumenViewModel(PacienteBE paciente,IEnumerable<TratamientoBE.Atencion> tratamientos)
         {
-            this.lTratamientos = tratamientos.ToList();
+            Paciente = paciente;
+            LTratamientos = new ObservableCollection<TratamientoBE.Atencion>(tratamientos);
         }
 
-        private List<TratamientoBE.Atencion> ltratamientos;
+        public PacienteBE Paciente { get; set; }
 
-        private vmbCommand finalizar;        
+        private ObservableCollection<TratamientoBE.Atencion> lTratamientos;
 
         public string Total
         {
@@ -39,27 +41,38 @@ namespace Clinica.Dental.SantaApolonia.ViewModel
         }
 
 
-        public List<TratamientoBE.Atencion> lTratamientos
+        public ObservableCollection<TratamientoBE.Atencion> LTratamientos
         {
-            get { return ltratamientos; }
-            set {
-                ltratamientos = value;
-                OnPropertyChanged();
-            }
+            get { return lTratamientos; }
+            set { lTratamientos = value; OnPropertyChanged(); }
         }
 
-        public ICommand Finalizar
-        {
-            get
+        public ICommand Finalizar =>
+            new vmbCommand(execute =>
             {
-                return finalizar = finalizar ?? new vmbCommand(execute =>
+                try
                 {
+                    //var encontrados = lTratamientos.Where(x => x.Precio != 0);
 
+                    //var nuevo = new TratamientoBL();
 
+                    //nuevo.RegistrarAtencion(
+                    //    new TratamientoBE.Historial
+                    //    {
+                    //        Archivo = Paciente.Dni + ".xml",
+                    //        Especificasiones = "Sin especificar",
+                    //        IdPaciente = Paciente.IdPaciente
+                    //    }, 
+                    //    encontrados);
 
-                });
-            }
-        }
+                    System.Windows.MessageBox.Show("Atención finalizada correctamente.");
+                    CloseWindowEvent?.Invoke(this, null);
+                }
+                catch (Exception ex)
+                {
+                    System.Windows.MessageBox.Show(ex.Message, "Error al finalizar", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Hand, System.Windows.MessageBoxResult.OK);
+                }
+            });
 
 
         #region Implementacion vmbClose

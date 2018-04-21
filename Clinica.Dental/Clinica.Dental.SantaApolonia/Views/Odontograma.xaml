@@ -45,7 +45,7 @@
             </Grid.ColumnDefinitions>
 
             <StackPanel Grid.Column="2">
-                <s:ZoomBox ScrollViewer="{Binding Source={x:Reference ScroolLados}}" Margin="2" />
+                <s:ZoomBox x:Name="ControlZoom" ScrollViewer="{Binding Source={x:Reference ScroolLados}}" Margin="2" />
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition />
@@ -235,6 +235,7 @@
                                   HorizontalScrollBarVisibility="Auto"
                                   VerticalScrollBarVisibility="Auto" >
                         <s:DesignerCanvas x:Name="MyDesignerCanvas" Height="730" Width="800" AllowDrop="True" >
+                            
                             <Canvas.Background>
                                 <ImageBrush ImageSource="/odontograma.png" />
                             </Canvas.Background>

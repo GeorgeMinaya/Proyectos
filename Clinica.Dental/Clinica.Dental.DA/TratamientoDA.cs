@@ -29,7 +29,7 @@ namespace Clinica.Dental.DA
                         };
 
             return lista;
-        }
+        }       
 
         public void RegistrarAtencion(TratamientoBE.Historial nuevo, IEnumerable<TratamientoBE.Atencion> lencontrados)
         {            
@@ -44,7 +44,8 @@ namespace Clinica.Dental.DA
             };
 
             bdClinica.HISTORIAL.InsertOnSubmit(historia);
-                        
+            bdClinica.SubmitChanges();
+
             foreach (var r in lencontrados)
             {
                 var detalle = new DETALLE_HISTORIAL

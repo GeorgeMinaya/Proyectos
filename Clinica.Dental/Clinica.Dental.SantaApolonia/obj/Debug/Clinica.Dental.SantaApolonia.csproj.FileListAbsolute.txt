@@ -207,6 +207,7 @@ C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.SantaApolonia
 C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.SantaApolonia\obj\Debug\Clinica.Dental.SantaApolonia_MarkupCompile.lref
 C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.SantaApolonia\obj\Debug\App.baml
 C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.SantaApolonia\obj\Debug\MainWindow.baml
+C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.SantaApolonia\obj\Debug\Plantilla\Procesado.baml
 C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.SantaApolonia\obj\Debug\Plantilla\TratoPulpar.baml
 C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.SantaApolonia\obj\Debug\Plantilla\Transposicion.baml
 C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.SantaApolonia\obj\Debug\Plantilla\SuperNumerario.baml
@@ -256,4 +257,4 @@ C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.SantaApolonia
 C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.SantaApolonia\obj\Debug\Clinica.Dental.SantaApolonia.csproj.GenerateResource.Cache
 C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.SantaApolonia\obj\Debug\Clinica.Dental.SantaApolonia.exe
 C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.SantaApolonia\obj\Debug\Clinica.Dental.SantaApolonia.pdb
-C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.SantaApolonia\obj\Debug\Plantilla\Procesado.baml
+C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.SantaApolonia\bin\Debug\PacienteDA.cs

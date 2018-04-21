@@ -54,10 +54,7 @@ namespace Clinica.Dental.SantaApolonia.ViewModel
         public List<string> lHoras
         {
             get { return lhoras; }
-            set {
-                lhoras = value;
-                OnPropertyChanged();
-            }
+            set { lhoras = value; OnPropertyChanged(); }
         }
 
         public ICommand GuardarCita
@@ -115,9 +112,7 @@ namespace Clinica.Dental.SantaApolonia.ViewModel
                 "06:00 PM",
                 "06:30 PM",
                 "07:00 PM",
-                "07:30 PM",
-                "08:00 PM",
-                "08:30 PM"
+                "07:30 PM"
             };
         }
 

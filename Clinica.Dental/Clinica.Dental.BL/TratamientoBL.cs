@@ -28,5 +28,17 @@ namespace Clinica.Dental.BL
                 throw ex;
             }
         }
+
+        public void RegistrarAtencion(TratamientoBE.Historial nuevo, IEnumerable<TratamientoBE.Atencion> lencontrados)
+        {
+            try
+            {
+                oTratamiento.RegistrarAtencion(nuevo, lencontrados);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

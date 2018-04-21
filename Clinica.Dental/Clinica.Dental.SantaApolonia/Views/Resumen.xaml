@@ -40,7 +40,7 @@
             </Button>
         </Grid>
         <ListView Grid.Row="1" x:Name="lvResumen" BorderBrush="White" Margin="4,15"
-                      ItemsSource="{Binding lTratamientos }"                       
+                      ItemsSource="{Binding LTratamientos }"                       
                       HorizontalContentAlignment="Stretch" Foreground="SteelBlue">
             <ListView.ItemTemplate>
                 <DataTemplate>

@@ -66,6 +66,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Converts\FormatoFecha.cs" />
+    <Compile Include="Converts\StringToInt.cs" />
     <Compile Include="Helpers\DesignerCanvas.cs" />
     <Compile Include="Helpers\DesignerItem.cs" />
     <Compile Include="Helpers\MoveThumb.cs" />
