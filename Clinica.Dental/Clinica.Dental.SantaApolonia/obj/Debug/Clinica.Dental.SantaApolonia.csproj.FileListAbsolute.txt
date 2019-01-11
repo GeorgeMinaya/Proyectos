@@ -91,7 +91,6 @@ C:\Desarrollo\Clinica.Dental\Clinica.Dental.SantaApolonia\bin\Debug\Clinica.Dent
 C:\Desarrollo\Clinica.Dental\Clinica.Dental.SantaApolonia\bin\Debug\Clinica.Dental.BL.pdb
 C:\Desarrollo\Clinica.Dental\Clinica.Dental.SantaApolonia\bin\Debug\Clinica.Dental.DA.pdb
 C:\Desarrollo\Clinica.Dental\Clinica.Dental.SantaApolonia\bin\Debug\Clinica.Dental.DM.pdb
-C:\Desarrollo\Clinica.Dental\Clinica.Dental.SantaApolonia\obj\Debug\Clinica.Dental.SantaApolonia.csprojResolveAssemblyReference.cache
 C:\Desarrollo\Clinica.Dental\Clinica.Dental.SantaApolonia\obj\Debug\Resources\Brushes.baml
 C:\Desarrollo\Clinica.Dental\Clinica.Dental.SantaApolonia\obj\Debug\Resources\Expander.baml
 C:\Desarrollo\Clinica.Dental\Clinica.Dental.SantaApolonia\obj\Debug\Resources\ScrollBar.baml
@@ -258,3 +257,9 @@ C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.SantaApolonia
 C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.SantaApolonia\obj\Debug\Clinica.Dental.SantaApolonia.exe
 C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.SantaApolonia\obj\Debug\Clinica.Dental.SantaApolonia.pdb
 C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.SantaApolonia\bin\Debug\PacienteDA.cs
+C:\Desarrollo\Clinica.Dental\Clinica.Dental.SantaApolonia\bin\Debug\PacienteDA.cs
+C:\Desarrollo\Clinica.Dental\Clinica.Dental.SantaApolonia\bin\Debug\Clinica.Dental.DM.dll.config
+C:\Desarrollo\Clinica.Dental\Clinica.Dental.SantaApolonia\obj\Debug\Clinica.Dental.SantaApolonia.csprojAssemblyReference.cache
+C:\Desarrollo\Clinica.Dental\Clinica.Dental.SantaApolonia\obj\Debug\Plantilla\Procesado.baml
+C:\Desarrollo\Clinica.Dental\Clinica.Dental.SantaApolonia\obj\Debug\Clinica.Dental.SantaApolonia.csproj.CoreCompileInputs.cache
+C:\Desarrollo\Clinica.Dental\Clinica.Dental.SantaApolonia\obj\Debug\Clinica.Dental.SantaApolonia.csproj.CopyComplete

@@ -35,10 +35,7 @@ namespace Clinica.Dental.SantaApolonia.ViewModel
             }
         }
 
-        public string SumaTotal
-        {
-            get { return "Total en atenciones : S/ " + lTratamientos.Sum(x => x.Precio).ToString(); }
-        }
+        public string SumaTotal => $"Total en atenciones : S/ {lTratamientos.Sum(x => x.Precio)}";
 
 
         public ObservableCollection<TratamientoBE.Atencion> LTratamientos

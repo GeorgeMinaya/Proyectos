@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.SantaApolonia\obj\Debug\
+C:\Desarrollo\Clinica.Dental\Clinica.Dental.SantaApolonia\obj\Debug\
 Clinica.Dental.SantaApolonia
 none
 false
 DEBUG;TRACE
-C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.SantaApolonia\App.xaml
+C:\Desarrollo\Clinica.Dental\Clinica.Dental.SantaApolonia\App.xaml
 54-555197476
 1-557854806
 341925953883
-16433714037
+16861135353
 MainWindow.xaml;Plantilla\Procesado.xaml;Plantilla\TratoPulpar.xaml;Plantilla\Transposicion.xaml;Plantilla\SuperNumerario.xaml;Plantilla\SemiImpactacion.xaml;Plantilla\Restauracion.xaml;Plantilla\Remanente.xaml;Plantilla\ProtesisTotal.xaml;Plantilla\ProtesisRemovible.xaml;Plantilla\ProtesisFija.xaml;Plantilla\Migracion.xaml;Plantilla\Geminacion.xaml;Plantilla\Giroversion.xaml;Plantilla\Fractura.xaml;Plantilla\EdentuloTotal.xaml;Plantilla\Caries.xaml;Plantilla\CoronaDefinitiva.xaml;Plantilla\CoronaTemporal.xaml;Plantilla\DesgasteOclusal.xaml;Plantilla\Diastema.xaml;Plantilla\DienteAusente.xaml;Plantilla\DienteClavija.xaml;Plantilla\DienteDiscromico.xaml;Plantilla\DienteEctopico.xaml;Plantilla\DienteIntruido.xaml;Plantilla\DienteExtruido.xaml;Plantilla\Disposiciones.xaml;Plantilla\AORemovible.xaml;Plantilla\Impactacion.xaml;Plantilla\Implante.xaml;Plantilla\Movilidad.xaml;Plantilla\Microdoncia.xaml;Plantilla\Macrodoncia.xaml;Resources\Brushes.xaml;Resources\DesignerItem.xaml;Resources\Expander.xaml;Resources\ResizeChrome.xaml;Resources\ScrollBar.xaml;Resources\ScrollViewer.xaml;Resources\Slider.xaml;Resources\StatusBar.xaml;Resources\Styles\Boton.xaml;Resources\ToolBar.xaml;Resources\Toolbox.xaml;Resources\Tooltip.xaml;Resources\ZoomBox.xaml;Views\Agenda.xaml;Views\Odontograma.xaml;Views\Opciones.xaml;Views\Pacientes.xaml;Views\Registro.xaml;Views\Reservar.xaml;Views\Resumen.xaml;
 
 False

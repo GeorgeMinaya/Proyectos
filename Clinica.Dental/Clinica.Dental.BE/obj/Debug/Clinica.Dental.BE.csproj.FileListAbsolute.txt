@@ -11,3 +11,4 @@ C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.BE\bin\Debug\
 C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.BE\bin\Debug\Clinica.Dental.BE.pdb
 C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.BE\obj\Debug\Clinica.Dental.BE.dll
 C:\Users\W7\Source\Fuentes\Proyectos\Clinica.Dental\Clinica.Dental.BE\obj\Debug\Clinica.Dental.BE.pdb
+C:\Desarrollo\Clinica.Dental\Clinica.Dental.BE\obj\Debug\Clinica.Dental.BE.csproj.CoreCompileInputs.cache

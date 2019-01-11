@@ -29,6 +29,11 @@ namespace Clinica.Dental.BL
             }
         }
 
+        /// <summary>
+        /// Genera el registro de la atención
+        /// </summary>
+        /// <param name="nuevo"></param>
+        /// <param name="lencontrados"></param>
         public void RegistrarAtencion(TratamientoBE.Historial nuevo, IEnumerable<TratamientoBE.Atencion> lencontrados)
         {
             try
